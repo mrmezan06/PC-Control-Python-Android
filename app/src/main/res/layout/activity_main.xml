@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Control PC"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:weightSum="9"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/music"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Music"
+            />
+        <Button
+            android:id="@+id/shutdown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="ShutDown"
+            />
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Restart"
+            />
+    </LinearLayout>
+
+</LinearLayout>
